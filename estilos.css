@@ -89,7 +89,7 @@ header {
 
 footer{
     background: #f5576c;
-    color: black;
+    color: white;
 }
 
 .form{
@@ -101,7 +101,7 @@ footer{
 .input{
     background: transparent;
     border: 0;
-    color: black;
+    color: white;
     outline: none;
     border: 1px  solid coral;
     padding: 20px 10px;
@@ -109,7 +109,7 @@ footer{
 }
 
 .input::placeholder{
-    color: black;
+    color: white;
     font-family: 'raleway', 'sans-serif';
 }
 
@@ -293,9 +293,6 @@ input[type="submit"]:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 0;
-    
-   
-   
 }
 
 .website img{
@@ -306,7 +303,6 @@ input[type="submit"]:hover{
 .website .contenedor-textos-main{
     width: 40%;
     
-
 }
 
 .parrafo{
@@ -314,6 +310,65 @@ input[type="submit"]:hover{
     margin-bottom: 20px;
 }
 
+
+@media screen and (max-width: 550px) {
+    /* Section */
+
+.website{
+    display: inline-block;
+    align-items: center;
+    margin-top: 0;
+}
+
+.website img{
+    width: 90%;
+    padding-top: 50px;
+    padding-left: 100px;
+
+    
+}
+
+.website .contenedor-textos-main{
+    width: 100%;
+    padding-left: 80px;
+    
+}
+
+.parrafo{
+    text-align: column;
+    margin-bottom: 12px;
+}
+
+/* info2 */
+
+.info-last {
+    display: inline-block;
+    background-color: #c2cfd8;
+    align-items: center;
+}
+
+.last-section{
+    display: inline-block;
+    align-items: center;
+    
+}
+
+.last-section img{
+    width: 90%;
+}
+.info-last .contenedor .last-section {
+    display: inline-block;
+    align-items: center;
+}
+
+.last-section .contenedor-textos-main{
+    width: 100%;
+}
+.titulo.left{
+    text-align: center;
+}
+
+}
 /* Info */
 
 .info{
@@ -325,7 +380,7 @@ input[type="submit"]:hover{
 /* info2 */
 
 .info-last {
-    background-color: #ececec;
+    background-color: #c2cfd8;
 }
 
 .last-section{
@@ -344,6 +399,9 @@ input[type="submit"]:hover{
     width: 40%;
 }
 
+
+
+
 /* galeria */
 
 
@@ -351,6 +409,7 @@ input[type="submit"]:hover{
 .galeria{
     background: #5a5c5a4e;
     
+
 }
 
 .galeria-cont{
@@ -373,40 +432,94 @@ input[type="submit"]:hover{
     overflow: hidden;
 }
 
-/* ---- FORMULARIO GUARDERIA ----*/
+/* ---- FORMULARIO AOPCIONES ----*/
 
 /* The container */
 
+.formularioAdopciones{
+    background: #f1dced;
+    color: rgb(98, 98, 118);
+}
 
-
-.container {
-    border: 1px ;
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
+.titulo1{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+h2 {
     font-size: 30px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .checkmark {
-    background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin: 14px 12px;
-  cursor: pointer;
-  }
+    font-family: 'raleway', 'sans-serif';
+    padding:20px 10px ;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    border: 3px  solid rgb(56, 84, 40);
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.input::placeholder{
+    color: white;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"], 
+input[type="email"]{
+    display: inline-block;
+    width: 69%;
+    margin-bottom: 30px;
+}
+input[type="radio"] {
+    display: ruby-base-container;
+    text-align: center;
+    
+    margin-bottom: 30px;
+
+}
+
+
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 160px;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(45, 81, 30);
+    background: rgb(199, 255, 192);
+}
+
+
 
 /* ----- SERVICIOS ---- */
 
   .contenedor .last-section {
     border: 4px solid crimson;
   }
+ 
+
+  /* ----- CONSEJOS  --------*/
+
+  .contenedor last-section2 {
+    background-color: #f5576c;
+  }
+
+
